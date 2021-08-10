@@ -8,6 +8,10 @@ const helloClick$ = new Observable<MouseEvent>(subscriber => {
   });
 });
 
-helloClick$.subscribe(event => console.log('Sub 1:', event.type, event.x, event.y));
+helloClick$.subscribe(
+  event => console.log('Sub 1:', event.type, event.x, event.y)
+  );
 
-helloClick$.subscribe(event => console.log('Sub 2:', event.type, event.x, event.y));
+helloClick$.subscribe(
+  event => console.log('Sub 2:', event.type, event.x, event.y)
+  );
